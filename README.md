@@ -78,6 +78,129 @@ home.html
 
 </html>
 
+menu.html
+
+<html>
+    <head>
+        <link rel="stylesheet" href="home3.css" />
+    </head>
+    <body>
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Food Menu</h1>
+
+            <div class="favourite-place-card-container d-flex flex-row justify-content-center">
+                <img src="https://img.freepik.com/premium-photo/yummy-chicken-pulao-isolated-white-background_787273-55616.jpg?w=826" class="favourite-place-card-image" />
+                <div>
+                    <h1 class="favourite-place-card-heading">Chicken Briyani</h1>
+                    <p class="favourite-place-card-description">
+                        Slow-cooked for deep flavor,100% fresh ingredients,served hot with raita & salan,A taste that keeps you coming back for more!
+                    </p>
+                    <p class="favourite-place-card-heading">Rs.150</p>
+                </div>
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row justify-content-center">
+                <img src="https://img.freepik.com/free-photo/side-view-baked-chicken-with-cucumber-lemon-seasoning-bread-table_141793-4757.jpg?t=st=1745395710~exp=1745399310~hmac=40381ed561ed5f15e602e0f67c4051210165c86fb087f95987dbf21cb5545716&w=1380" class="favourite-place-card-image" />
+                <div>
+                    <h1 class="favourite-place-card-heading">Tandhoori</h1>
+                    <p class="favourite-place-card-description">
+                        Authentic spices & marinades,Cooked in a real clay tandoor oven,Juicy inside, crisp & smoky outside,Served with mint chutney, lemon wedges & love!
+                    </p>
+                    <p class="favourite-place-card-heading">Rs.400</p>
+                </div>
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row justify-content-center">
+                <img src="https://img.freepik.com/free-photo/delicious-food-table_23-2150857814.jpg?t=st=1745396269~exp=1745399869~hmac=44ad66dab997101c343cd217be4fac161372300a1c216d248c287144cfe4d4b2&w=1380" class="favourite-place-card-image" />
+                <div>
+                    <h1 class="favourite-place-card-heading">veg meals</h1>
+                    <p class="favourite-place-card-description">
+                        Steamed Rice with Ghee,Sambar, Rasam & Kootu,Variety of Poriyals & Curries,Fresh Curd, Pickles & Papad,Sweet Payasam to end on a sweet note!
+                    </p>
+                    <p class="favourite-place-card-heading">Rs.100</p>
+                </div>
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row justify-content-center">
+                <img src="https://img.freepik.com/premium-photo/idly-idli-south-indian-main-breakfast-item-which-is-beautifully-arranged-aqua-color-plates_527904-2880.jpg?w=1380" class="favourite-place-card-image" />
+                <div>
+                    <h1 class="favourite-place-card-heading">Idly</h1>
+                    <p class="favourite-place-card-description">
+                        Idly, made fresh daily with perfectly fermented batter and steamed to soft, cloud-like perfection.Spicy Sambar,Coconut & Tomato Chutneys,A dash of homemade love
+                    </p>
+                    <p class="favourite-place-card-heading">Rs.20</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+contact.html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="home2.css" />
+</head>
+
+<body>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+
+</html>
+
+admin.html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home4.css">
+    </head>
+    <body>
+        <div class="admin-container">
+            <aside class="sidebar">
+                <h2>Admin Panel</h2>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <header>
+                    <h1>Welcome, Admin</h1>
+                </header>
+                <section class="dashboard">
+                    <div class="card">
+                        <h3>Total Orders</h3>
+                        <p>124</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total Users</h3>
+                        <p>89</p>
+                    </div>
+                    <div class="card">
+                        <h3>Revenue</h3>
+                        <p>$2,350</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
+
 
 home.css
 
@@ -165,10 +288,208 @@ home.css
 span {
     color: red;
 }
+
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #004aad;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #004aad;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #007bff;
+}
+
+.favourite-places-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.favourite-places-heading {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 24px;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 60px #ff00ff;
+    text-align: center;
+
+}
+
+.favourite-place-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 50px;
+    background-attachment: fixed;
+}
+
+.favourite-place-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.favourite-place-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+    text-align: center;
+}
+
+.favourite-place-card-image {
+    width: 80px;
+    height: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+}
+
+.admin-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #004aad;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+header h1 {
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #004aad;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
 ```
 # OUTPUT:
 ![alt text](<Screenshot 2025-04-20 121551.png>)
 
 ![alt text](<Screenshot 2025-04-20 121608.png>)
+
+# menu page
+![alt text](<Screenshot 2025-04-23 164834.png>)
+
+# admin page
+![alt text](<Screenshot 2025-04-23 164850.png>)
+
+# contact page
+![alt text](<Screenshot 2025-04-23 164905.png>)
 # RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
